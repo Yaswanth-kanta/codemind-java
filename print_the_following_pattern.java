@@ -1,15 +1,11 @@
-import java.util.*;
-class pat
-{
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        for (int i=a;i>=1;i--)
-        {
-            for (int j=1;j<=i;j++)
-            {
-                System.out.print(j);
+import java.util.Scanner;
+class Pattern{
+    public static void main(String[] args){
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=n;j>0;j--){
+                System.out.printf("%d ",j);
             }
             System.out.println();
         }
