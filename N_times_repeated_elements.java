@@ -6,19 +6,19 @@ class sam
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int [] arr=new int [n];
-        for (int i=0;i<n;i++)
+        for (int i=0;i<n;i++){
             arr[i]=sc.nextInt();
+        }
         int k=sc.nextInt();
-        ArrayList<Integer> a=new ArrayList<Integer>();
-        for (int ele:arr)
-            a.add(ele);
-        HashSet<Integer> ar=new HashSet<Integer>();
+        ArrayList<Integer> ar=new ArrayList<Integer>();
         for (int ele:arr)
             ar.add(ele);
+        HashSet<Integer> a=new HashSet<Integer>();
+        for (int ele:arr)
+            a.add(ele);
         boolean f=false;
-        for (int ele:ar)
-        {
-            if (Collections.frequency(a,ele)==k)
+        for (int ele:a){
+            if (Collections.frequency(ar,ele)==k)
             {
                 f=true;
                 System.out.print(ele+" ");
